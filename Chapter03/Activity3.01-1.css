@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+#page-header {
+  text-align: center;
+}
+  .newspaper-info {
+    margin: 2% 0;
+  }
+    #vol-price {
+      margin-right: 20vw;
+    }
+  .heading {
+    padding: 2% 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+    .heading h1 {
+      font-size: 4em;
+    }
+    .heading h2 {
+      font-size: 2em;
+    }
+
+/* Main */
+main {
+  margin: 5% 10%;
+  text-align: justify;
+}
