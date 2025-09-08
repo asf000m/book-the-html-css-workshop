@@ -1,0 +1,73 @@
+/* # Typography ------------------------------------------------------------ */
+body,
+button,
+input,
+select,
+textarea {
+  color: #ffffff;
+}
+pre {
+  background: #111111;
+}
+abbr,
+acronym {
+  border-bottom: 1px dotted #999999;
+}
+
+/* # Elements   ------------------------------------------------------------ */
+body {
+  background: #000000;
+}
+.content-area {
+  background: #000000;
+}
+article {
+  h1 {
+  color: #acd891;
+  }
+  .content {
+    color: #999999;
+  }
+  picture img {
+    border-top: 2px solid #6f66f6;
+    border-bottom: 4px solid #6f66f6;
+  }
+}
+footer.site-footer {
+  color: #123752;
+  background: #aac0ff;
+  a {
+    color: #123752;
+  }
+}
+
+
+
+/* # Navigation ------------------------------------------------------------ */
+  /* ## Links   ------------------------------------------------------------ */
+  a {
+    color: #add8e6;  
+    &:visited {
+      color: #b19cd9;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      color: #4169e1;
+    }
+  }
+
+header.site-header {
+  h1, a {
+    color: #edc8ad;
+  }
+  nav {
+    .menu, li a {
+      color: #aae8ff;
+    }
+  }
+}
+.blog .site-header,
+.single-post .site-header {
+  background: #001655;
+}
