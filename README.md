@@ -1,5 +1,6 @@
 <h1>The HTML and CSS Workshop</h1>
 <h2>Lewis Coulson, Brett Jephson, Rob Larsen, Matt Park, and Marian Zburlea</h2>
+<img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1596668940i/54828947.jpg" height="300px" alt="cover">
 <p>2020. Packt Publishing</p>
 <p>ISBN 978-1-83882-453-2</p>
 <hr>
