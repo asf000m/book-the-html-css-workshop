@@ -1,0 +1,48 @@
+.postid-11002 {
+  a {
+  color: #a5dff2;
+  }
+  a:visited {
+    color: #c0a5f2;
+  }
+  a:hover,
+  a:focus,
+  a:active {
+    color: #4c72e5;
+  }
+
+  .content-area {
+    background: linear-gradient(to bottom, #222222 30%, #333333 70%, #666666 100%);
+    width: 100%;
+    float: none;
+    padding: 0;
+    box-shadow: none;
+    border: 10px solid #999;
+  }
+  
+  .main-navigation,
+  .widget-area {
+    display: none;
+  }
+
+  header.site-header,
+  .site-footer {
+    max-width: 1200px;
+    margin: auto;
+    background: #999;
+    box-shadow: none;
+  }
+
+  header.site-header h1 a {
+    display: inline-block;
+    background: url(logo.png) no-repeat;
+    height: 75px;
+    text-indent: -9999px;
+    width: 750px;
+  }
+
+  article.tag-h5bp {
+    color: #ddd;
+    padding: 0 2%;
+  }
+}

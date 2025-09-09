@@ -1,0 +1,9 @@
+body {
+  filter: invert(100%);
+  background: #000000;
+}
+.content-area,
+.blog .site-header,
+.single-post .site-header {
+  box-shadow: none;
+}
