@@ -1,0 +1,46 @@
+.postid-11002 {
+  background-color: #9db3f4;
+  color: #333355;
+  
+  .site-header,
+  .site-footer {
+    background-color: #4c72e5;
+    color: #fff;
+  }
+
+  .site-header {
+    a,
+    h1 a {
+      color: #fff;
+    }
+    a:visited {
+      color: #ff9b3f;
+    }
+  }
+
+  a {
+    color: #0e3ece;
+
+    &:visited {
+      color: #bf0ece;
+    }
+  }
+
+  .site-content {
+    background-color: #fff;
+    border: 4px solid #2a56db;
+
+    .entry-title {
+      color: #2a56db;
+    }
+
+    h2 {
+      color: #ff7a00;
+    }
+  }
+
+  .site-header,
+  .content-area {
+    box-shadow: none;
+  }
+}
