@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2</title>
+    <style>
+      .child {
+        width: 275px;
+        height: 175px;
+        margin: 10px;
+        text-align: center;
+        border: 1px solid lightgray;
+      }
+      #container-1 {
+      display: flex;
+        flex-wrap: wrap;
+        
+        .child {
+          flex-basis: 175px;
+        }
+      }
+      #container-2 {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="container-1">
+      <div class="child">div element</div>
+      <div class="child">div element</div>
+      <div class="child">div element</div>
+      <div class="child">div element</div>
+      <div class="child">div element</div>
+    </div>
+    <hr>
+    <div id="container-2">
+      <div class="child">div element</div>
+      <div class="child">div element</div>
+      <div class="child">div element</div>
+      <div class="child">div element</div>
+      <div class="child">div element</div>
+    </div>
+  </body>
+</html>

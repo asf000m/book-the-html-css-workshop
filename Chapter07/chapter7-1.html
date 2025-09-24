@@ -4,10 +4,67 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 7</title>
+    <style>
+      img {
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
     <audio src="media/deep-abstract-ambient_snowcap-401656.mp3" controls>
       It looks like your browser does not support <code>audio</code>.
     </audio>
+    <picture>
+      <source srcset="media/cat-9813484_12801.jpg" media="(max-width: 700px)">
+      <source srcset="media/cat-9813484_1280.jpg" media="(max-width: 1000px)">
+      <img src="media/cat-9813484_1280.jpg" alt="cat">
+    </picture>
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+      <circle cx="50" cy="50" r="48" fill="#4717F6"/>
+      <path d="M 85,50 25,75 25,25 z" fill="white"/>
+    </svg>
+    <canvas id="canvasArea" width="640" height="480">
+      Your browser does not support the <code>canvas</code> element.
+    </canvas>
+    <script>
+      const canvasElement = document.getElementById('canvasArea');
+      if (canvasElement.getContext) {
+        const context = canvasElement.getContext('2d');
+        // we have a context so we can draw something
+        context.fillStyle = "red";
+        context.fillRect(50, 50, 150, 100);
+        context.strokeStyle = "red";
+        context.lineWidth = 4;
+        context.strokeRect(200, 150, 150, 100);
+        context.fillStyle = "blue";
+        context.strokeStyle = "orange";
+        context.lineWidth = 4;
+        context.rect(350, 250, 150, 100);
+        context.fill()
+        context.stroke();
+        context.fillStyle = "gray";
+        context.arc(100, 400, 25, 0, Math.PI * 2, false);
+        context.fill();
+        context.clearRect(0, 0, canvasElement.width, canvasElement.height);
+
+        const gradient = context.createLinearGradient(0, 0, 0, canvasElement.height / 2);
+        gradient.addColorStop(0, "red");
+        gradient.addColorStop(1, "darked");
+        context.fillStyle = gradient;
+        context.fillRect(0, 0, canvasElement.width / 2,  canvasElement.height);
+
+        const gradientRadial = context.createRadialGradient(
+          canvasElement.width * 0.5,
+          canvasElement.height * 0.5, 1,
+          canvasElement.width * 0.5,
+          canvasElement.height * 0.5,
+          canvasElement.width * 0.5
+        );
+        gradientRadial.addColorStop(0, "white");
+        gradientRadial.addColorStop(1, "black");
+        context.fillStyle = gradientRadial;
+        context.fillRect(canvasElement.width / 2, 0, canvasElement.width / 2, canvasElement.height);
+      }
+    </script>
   </body>
 </html>
