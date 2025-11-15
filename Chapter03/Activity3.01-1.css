@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+body {
+  max-width: 1200px;
+  margin: auto;
+}
+
 /* Header */
 #page-header {
   text-align: center;
@@ -39,7 +44,7 @@ main {
     "article1 article2 article3"
     "article1 article2 article4"
     "article1 article2 article5";
-  column-gap: 2rem;
+  column-gap: 1.5rem;
   margin: 3%;
   text-align: justify;
 }
@@ -55,6 +60,15 @@ article {
 }
 #article-2 {
   grid-area: article2;
+}
+#article-3 {
+  grid-area: article3;
+}
+#article-4 {
+  grid-area: article4;
+}
+#article-5 {
+  grid-area: article5;
 }
 
 .page {
