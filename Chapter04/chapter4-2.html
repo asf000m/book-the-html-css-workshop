@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 11 - Styling Form Elements</title>
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif ;
+    }
+    body {
+      margin: 2% 25%;
+    }
+    label {
+      font-size: 1.5em;
+    }
+    div {
+      margin-bottom: 1em;
+    }
+    input,
+    textarea {
+      width: 250px;
+      padding: 0.75em 0;
+      border: 0;
+      border-bottom: 1px solid gray;
+    }
+    button {
+      width: 250px;
+      height: 50px;
+      font-size: 1em;
+      text-transform: uppercase;
+      color: white;
+      background-color: gray;
+      border: 0;
+    }
+    select {
+      width: 250px;
+      padding: 10px 5px;
+      color: darkslategray;
+      border: 0;
+      border-bottom: 1px solid gray;
+      border-radius: 0;
+      box-shadow: none;
+      background-color: transparent;
+    }
+    .select-wrapper {
+      position: relative;
+      width: 250px;
+    }
+  </style>
+</head>
+<body>
+  <form action="#" method="post">
+    <div>
+      <label for="firstName">First name:</label> <br>
+      <input id="firstName" type="text" name="firstName" placeholder="Your first name">
+    </div>
+    <div>
+      <label for="lastName">Last name:</label> <br>
+      <input id="lastName" type="text" name="lastName" placeholder="Your last name">
+    </div>
+    <div>
+      <label for="message">Message:</label> <br>
+      <textarea id="message" name="message" rows="10" cols="30" placeholder="Your message"></textarea>
+    </div>
+    <div class="select-wrapper">
+      <select id="countries" name="countries">
+        <option value="england">England</option>
+        <option value="scotland">Scotland</option>
+        <option value="ireland">Ireland</option>
+        <option value="wales">Wales</option>
+      </select>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

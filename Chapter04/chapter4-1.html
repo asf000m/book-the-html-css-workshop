@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 4 - Forms</title>
+  <style>
+    body {
+      margin: 2% 10%;
+      font-size: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <form action="#" name="form-name">
+    <fieldset>
+      <div>
+        <label for="firstName">First name:</label> <br>
+        <input id="firstName" type="text" name="firstName">
+      </div>
+      <div>
+        <label for="lastName">Last name:</label> <br>
+        <input id="lastName" type="text" name="lastName">
+      </div>
+      <div>
+        <label for="userName">Username:</label> <br>
+        <input id="userName" type="text" name="userName" maxlength="10">
+      </div>
+      <div>
+        <label for="email">E-mail:</label> <br>
+        <input id="email" type="email" name="email">
+      </div>
+      <div>
+        <label for="password">Password:</label> <br>
+        <input id="password" type="password" name="password">
+      </div>
+      <div>
+        <label for="message">Message:</label> <br>
+        <textarea id="message" name="message" rows="15" cols="45"></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </fieldset>
+
+    <p>Do you like HTML?</p>
+    <fieldset>
+      <div>
+        <input id="yes" type="radio" name="html">
+        <label for="yes">Yes</label>
+      </div>
+      <div>
+        <input id="no" type="radio" name="html">
+        <label for="no">No</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <label for="countries">Country:</label> <br>
+      <select id="countries" name="countries">
+        <option value="england">England</option>
+        <option value="scotland">Scotland</option>
+        <option value="ireland">Ireland</option>
+        <option value="wales">Wales</option>
+      </select>
+    </fieldset>
+    
+    <hr>
+
+    <div>
+      <input type="checkbox" name="color1" value="red"> Red
+    </div>
+    <div>
+      <input type="checkbox" name="color2" value="green"> Green
+    </div>
+    <div>
+      <input type="checkbox" name="color3" value="blue"> Blue
+    </div>
+
+    <hr>
+    
+    <div>
+      <input type="radio" name="color" value="red"> Red
+    </div>
+    <div>
+      <input type="radio" name="color" value="green"> Green
+    </div>
+    <div>
+      <input type="radio" name="color" value="blue"> Blue
+    </div>
+
+    <hr>
+
+
+  </form>
+</body>
+</html>
